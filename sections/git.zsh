@@ -24,7 +24,7 @@ source "$SPACESHIP_ROOT/sections/git_status.zsh"
 # ------------------------------------------------------------------------------
 
 function git_last_tag() {
-  echo $(git describe --first-parent --tags)
+  echo $(git describe --first-parent --tags 2>/dev/null)
 }
 
 # Show both git branch and git status:
